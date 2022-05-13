@@ -12,7 +12,7 @@ from nerv import utility as util
 
 def test(path, server):
     experiments = util.helper(path)
-    app = dash.Dash(server=server, routes_pathname_prefix='/nerv/',
+    app = dash.Dash(server=server, routes_pathname_prefix='/',
                     external_stylesheets=[dbc.themes.SLATE])
     # app = dash.Dash(__name__, external_stylesheets=[dbc.themes.SLATE])
     app.title = 'NeRV'
